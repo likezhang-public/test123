@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package   ccc.ddd;
+
+option go_package="github.com/pp1/ccc/ddd/grpc-go/stubs";
+
+
+service D123 {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
