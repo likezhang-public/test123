@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package   sport.aaa;
+
+option go_package="github.com/bbb/sport/aaa/grpc-go/stubs";
+
+
+service Baaa {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
