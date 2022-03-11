@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package   ddd.ffff;
+
+option go_package="github.com/aaa3/ddd/ffff/grpc-go/stubs";
+
+
+service F2ddd {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
